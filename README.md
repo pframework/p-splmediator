@@ -26,10 +26,17 @@ use P\SplMediator;
 $sm = new SplMediator;
 
 // create an observer for the hello.world subject
-$sm->registerObserver('hello.world', function (\SplSubject $subject) { echo 'Hello ' . $subject->name; });
+$sm->registerObserver(
+    'hello.world',
+    function (\SplSubject $subject) { echo 'Hello ' . $subject->name; }
+);
 
 // create an observer that is registered with a higher priority, to set some values
-$sm->registerObserver('hello.world', function (\SplSubject $subject) { $subject->name = 'Ralph'; }, 2);
+$sm->registerObserver(
+    'hello.world',
+    function (\SplSubject $subject) { $subject->name = 'Ralph'; },
+    2
+);
 
 // since no specific \SplSubject was registered, \SplSubjectPriorityQueue will stand in
 $sm->notify('hello.world'); // Hello Ralph
