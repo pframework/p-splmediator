@@ -1,5 +1,5 @@
 {
-  "name": "pframework/splmediator",
+  "name": "pframework/p-splmediator",
   "description": "A mediator to unleash the full potential of SplSubjects and SplObservers",
   "license": "UNLICENSE",
   "authors": [
