@@ -1,15 +1,18 @@
 {
-    "name": "pframework/splmediator",
-    "description": "A mediator to unleash the full potential of SplSubjects and SplObservers",
-    "license": "UNLICENSE",
-    "authors": [
-        {
-            "name": "Ralph Schindler",
-            "email": "ralph@ralphschindler.com",
-            "role": "developer"
-        }
-    ],
-    "autoload": {
-        "psr-4": {"P\\": "source/"}
+  "name": "pframework/splmediator",
+  "description": "A mediator to unleash the full potential of SplSubjects and SplObservers",
+  "license": "UNLICENSE",
+  "authors": [
+    {
+      "name": "Ralph Schindler",
+      "email": "ralph@ralphschindler.com",
+      "role": "developer"
     }
+  ],
+  "autoload": {
+    "psr-4": {"P\\": "source/"}
+  },
+  "require-dev": {
+    "phpunit/PHPUnit": "3.7.*"
+  }
 }
